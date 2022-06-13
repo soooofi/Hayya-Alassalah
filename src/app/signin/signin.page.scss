@@ -1,0 +1,124 @@
+ion-toolbar {
+--background:var(--background)
+}
+
+ion-content {
+    --background:#ffffff;
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    margin-top: 20%;
+}
+#form {
+    margin-top: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    ion-button {
+        margin-top: 35px;
+        height: 48px;
+        font-size: 18px;
+        text-transform: initial;
+        border-radius: 50px ;
+        box-shadow: 1px 8px 8px 0px rgba($color: #000000, $alpha: 0.05);
+        --box-shadow:none;
+        
+    }
+    ion-input {
+        margin-top: 35px;
+        height: 50px;
+        font-size: 20px;
+        text-transform:initial;
+        border-radius: 50px ;
+        box-shadow: 1px 8px 8px 0px rgba($color: #000000, $alpha: 0.05);
+        --box-shadow:none;
+        --padding-start:20px;
+        --padding-bottom:15px;
+        --padding-top:15px;
+        --placeholder-color:#000000
+        border: radius color #299640;
+       
+    }
+    
+    }
+}   
+
+/*home scss*/
+
+#container {
+
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  
+  
+  /* button in signup*/
+  ion-button {
+    margin-top: 45px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: initial;
+    border-radius: 50px ;
+    --box-shadow:none; 
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 0%;
+    
+  }
+  .center {
+    border-radius: 50%;
+    height: 48px;
+    font-size: 18px;
+    text-transform: initial;
+    border-radius: 50px ;
+    box-shadow: 1px 8px 8px 0px rgba($color: #000000, $alpha: 0.05);
+    --box-shadow:none;
+  }
+  
+  ion-button {
+    margin-top: 45px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: initial;
+    border-radius: 50px ;
+    --box-shadow:none; 
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 0%;
+    
+  }

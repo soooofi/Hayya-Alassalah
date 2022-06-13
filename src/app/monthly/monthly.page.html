@@ -1,0 +1,692 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="black">
+      Hayya Alassalah
+    </ion-title>
+
+    <ion-button shape="clear"  slot="end" (click)="settings()">
+      <ion-icon name="settings" size="large" ></ion-icon>
+    </ion-button>  
+  
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" >
+
+<ion-item>
+  
+  <ion-label><h1>
+    <b>June 2022</b>
+  </h1>
+  <h2>Chhotapara Mosque, Raipur, CG</h2>
+  </ion-label>
+  <ion-buttons slot="end">
+    
+    <h1><b><ion-icon  name="refresh-outline" slot="end"></ion-icon></b></h1>
+  </ion-buttons>
+</ion-item>
+  
+
+  <ion-grid *ngFor="let note of notes" (click)="openNote(note)">
+    <ion-row>
+      <ion-col>
+        <div>Date</div>
+      </ion-col>
+      <ion-col id="green">
+        <div>Fajr</div>
+      </ion-col>
+      <ion-col id="green">
+        <div>Dhuhr</div>
+      </ion-col>
+      <ion-col id="green">
+        <div>'Asr</div>
+      </ion-col>
+      <ion-col id="green">
+        <div>Maghrib</div>
+      </ion-col>
+      <ion-col id="green">
+        <div>Isha'a</div>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col>
+        <div>{{note.day[0]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[1]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[2]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[3]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[4]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[5]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[6]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[7]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[8]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[9]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[10]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[11]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[12]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[13]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[14]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[15]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[16]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[17]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[18]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[19]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[20]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[21]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[22]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[23]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[24]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[25]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[26]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[27]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>{{note.day[28]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="odd">
+      <ion-col>
+        <div>{{note.day[29]}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.fajr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.dhuhr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.asr}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.maghrib}}</div>
+      </ion-col>
+      <ion-col>
+        <div>{{note.isha}}</div>
+      </ion-col>
+    </ion-row>
+
+   
+   
+  </ion-grid>
+  
+
+ 
+
+</ion-content>

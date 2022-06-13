@@ -1,0 +1,170 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="black">
+      Hayya Alassalah
+    </ion-title>
+    <ion-button shape="clear"  slot="end" (click)="settings()">
+      <ion-icon name="settings" size="large" ></ion-icon>
+    </ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card color="black" text-wrap >
+   <!-- <ion-card-header>
+      
+      <ion-card-title><h2><b>Prayer Timings</b></h2></ion-card-title>
+      
+      <ion-card-subtitle>
+        <ion-item lines="none">
+          
+          <ion-label>Chhotapara Mosque,Raipur, CG</ion-label>
+          <ion-button shape="round" fill="outline" slot="end">Change</ion-button>
+        </ion-item>
+     
+    </ion-card-subtitle>
+      <ion-card-title><b>      
+      
+        {{ today  | date   }}
+        
+      </b>  
+        
+    </ion-card-title>
+     
+      <ion-card-subtitle>23 Shawwal,1443 AH 
+        
+      </ion-card-subtitle>
+      
+     
+    </ion-card-header>-->
+    <ion-item lines="none">
+
+      <ion-label><h1>
+        <b>Prayer Timings</b>
+      </h1>
+      <h2>Chhotapara Mosque, Raipur, CG </h2>
+        
+      </ion-label>
+    </ion-item>
+    
+    <ion-item lines="none" >
+
+      <ion-label><h1>
+        <b>{{currentDate | date: 'EE, MMMM d'}}</b>
+      </h1>
+      
+      <h2>Dhul Qadah 1443 </h2>
+      </ion-label>
+      <ion-buttons slot="end">
+    
+        <h1><b><ion-icon  name="refresh-outline" slot="end"></ion-icon></b></h1>
+      </ion-buttons>
+    </ion-item>
+    
+
+    <ion-card-content fullscreen >
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h1>Fajr</h1>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h1>4:30 am </h1>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h1>Dhuhr</h1>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h1>1:00 pm</h1>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h1>'Asr</h1>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h1>4:50 pm</h1>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h1>Maghrib</h1>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h1>6:50 pm</h1>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h1>Isha'a</h1>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h1>8:00 pm</h1>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <ion-button  shape="round" (click)="monthly()" slot="end" >See Monthly</ion-button>
+            </div>
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="black" id="up">
+    <ion-card-header>
+      
+      <ion-card-title><h1><b>Mosque Updates</b></h1></ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+    <h2> Due to water shortages in the locality, the taps in the mosque are not operating properly. Please 
+      come to the mosque with wudu.</h2>
+    </ion-card-content>
+  </ion-card>
+  
+  
+</ion-content>
+
+

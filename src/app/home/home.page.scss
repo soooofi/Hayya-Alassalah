@@ -1,0 +1,113 @@
+ion-toolbar {
+  --background:var(--background)
+  }
+  
+  ion-content {
+      --background:#ffffff;
+  
+  #header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #299640;
+
+      ion-back-button {
+
+          ion-back-button {
+              color: #299640 !important;
+              --color-focused: #299640;
+              --color-hover: #299640;
+            }
+            :root {
+              ion-back-button {
+                --color: #299640;
+              }
+            }
+      }
+  }
+  
+  img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 8px solid #ffffff;
+      margin-top: 10%;
+  }
+  #form {
+      margin-top: 5%;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+
+      
+      
+     
+      ion-input {
+          margin-top: 15px;
+          --height: 60px;
+          
+          font-size: 20px;
+          text-transform:initial;
+          
+          --box-shadow:none;
+          
+          --placeholder-color:#000000;
+          text-align: center;
+          align-items: center;
+          background: rgb(255, 255, 255);
+          border: solid 2px #000000;
+          margin-bottom: 16px;
+         
+          
+          ion-select {
+            width: 100%;
+          
+            justify-content: center;
+          }
+          ion-select {
+            /* Applies to the value and placeholder color */
+            color: #000000;
+          
+            /* Set a different placeholder color */
+            --placeholder-color: #971e49;
+          
+            /* Set full opacity on the placeholder */
+            --placeholder-opacity: 1;
+          }
+         
+         
+      }
+      ion-card 
+      {
+          margin-top: 0%;
+          --backgrond:#299640;    
+      }
+      ion-card-title 
+      {
+          text-align: center;
+      }
+     
+     
+      
+     
+     
+      
+  }  
+  h1 {
+      color: #299640;
+      text-align: center;
+      padding-top: 30%;
+      padding-bottom: 25%;
+      font-size: 40px;
+  }
+
+  ion-button {
+      margin-top: 80%;
+      height: 50px;
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 1px 8px 8px 0px rgba($color: #000000, $alpha: 0.05);
+      
+  }
+}   
+

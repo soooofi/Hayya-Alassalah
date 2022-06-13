@@ -1,0 +1,50 @@
+ion-header
+{
+  --color: #0000000 !important;
+
+
+  ion-button {
+   border-style: hidden;
+   --box-shadow: none;
+   border-width: 0ch;
+   color: black;
+   --background:white;
+
+  }
+}
+ion-icon {
+  padding-right: 15px;
+}
+
+
+ion-content {
+  #up {
+    margin-top: 5%;
+  }
+
+  
+}
+ion-card {
+  
+   
+  margin-top: 25%;
+  border-radius: 15px 15px 15px 15px;
+  
+  ion-grid {
+    font-weight: 200;
+   
+
+    ion-button {
+     
+     
+      
+      border-radius: 50%;
+      
+      
+  }
+  }
+
+
+ 
+
+}

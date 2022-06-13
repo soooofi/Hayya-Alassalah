@@ -1,0 +1,107 @@
+ion-toolbar {
+    --background:var(--background)
+    }
+    
+    ion-content {
+        --background:#ffffff;
+    
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 8px solid #ffffff;
+        margin-top: 10%;
+    }
+    form {
+        margin-top: 5%;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        ion-button {
+            align-items: center;
+            margin-top: 100px;
+            height: 50px;
+            font-size: 18px;
+            text-transform: initial;
+            border-radius: 50px ;
+            --box-shadow:none; 
+            text-align: center;
+            padding-left: 120px;
+            //padding-right: 30px;
+            padding-bottom: 0%;
+            position: sticky;
+            width: 7cm;
+            
+        }
+        #log {
+            align-items: center;
+            margin-top: 30px;
+            height: 50px;
+            font-size: 18px;
+            text-transform: initial;
+            border-radius: 50px ;
+            //--box-shadow:none; 
+            text-align: center;
+            padding-left: 120px;
+            //padding-right: 30px;
+            padding-bottom: 0%;
+            position: sticky;
+            width: 7cm;
+            
+        }
+       
+       
+        ion-input {
+            margin-top: 15px;
+            height: 40px;
+            font-size: 20px;
+            text-transform:initial;
+            border-radius: 50px ;
+            --box-shadow:none;
+            --padding-start:20px;
+            --padding-bottom:15px;
+            --padding-top:15px;
+            --placeholder-color:#000000;
+
+            background: rgb(255, 255, 255);
+            border: solid 2px rgb(177, 175, 175);
+            margin-bottom: 16px;
+            height: 40px;
+            border-radius: 50px;
+            padding-left: 16px;
+           
+        }
+        ion-card {
+            margin-top: 0%;
+            border-radius: 50px 50px 50px 50px;
+            --backgrond:#299640;
+            border: solid 3.5px #299640;
+            height: 260px;
+            overflow: visible;
+            
+        }
+        ion-card-title {
+            text-align: center;
+        }
+        .center {
+            border-radius: 50%;
+            height: 48px;
+            font-size: 18px;
+            text-transform: initial;
+            border-radius: 50px ;
+            box-shadow: 1px 8px 8px 0px rgba($color: #000000, $alpha: 0.05);
+            --box-shadow:none;
+            padding: 2px;
+        }
+        h3 {
+            color: #299640;
+        }
+        
+        }
+    }   

@@ -1,0 +1,36 @@
+<ion-header id="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  
+  <h1><b>Signup</b></h1>
+
+    <form [formGroup]="form" id="form">
+      
+          <ion-card-title><b>Name</b></ion-card-title>
+          <ion-input></ion-input>
+          <ion-card-title><b>Email</b></ion-card-title>
+          <ion-input formControlName="email"></ion-input>
+          <ion-label color="danger" 
+          *ngIf="form.get('email').touched && form.get('email').errors?.email ">Email is invalid</ion-label>
+          <ion-label color="danger"
+           *ngIf="form.get('email').touched && form.get('email').errors?.required ">Email is Mandatory</ion-label>
+          <ion-card-title><b>Phone</b></ion-card-title>
+          <ion-input type="tel"></ion-input>
+          <ion-card-title><b>Password</b></ion-card-title>
+          <ion-input type="password" formControlName="password" ></ion-input>
+          <ion-label color="danger" 
+          *ngIf="form.get('password').touched && form.get('password').errors?.required ">Password is Mandatory</ion-label>
+          <ion-card-title><b>Confirm Password</b></ion-card-title>
+          <ion-input type="password"></ion-input>
+          
+        
+      <ion-button  shape="round" class="center" (click)="signup()">Continue</ion-button>
+    </form>
+</ion-content>
+

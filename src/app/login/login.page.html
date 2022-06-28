@@ -13,14 +13,17 @@
         <ion-card-header>
           <ion-card-title><b>Email</b></ion-card-title>
           <ion-input formControlName="email"></ion-input>
-
-          <ion-label color="danger" *ngIf="form.get('email').touched && form.get('email').errors?.email ">Email is invalid</ion-label>
-          <ion-label color="danger" *ngIf="form.get('email').touched && form.get('email').errors?.required ">Email is Mandatory</ion-label>
+          <app-error [field]="form.get('email')"
+           message="Email is mandatory"></app-error>
+          <ion-label color="danger"
+           *ngIf="form.get('email').touched && form.get('email').errors?.email ">Email is invalid</ion-label>
+          <!--<ion-label color="danger"
+           *ngIf="form.get('email').touched && form.get('email').errors?.required ">Email is Mandatory</ion-label>-->
           <ion-card-title><b>Password</b></ion-card-title>
           <ion-input type="password"  formControlName="password"></ion-input>
           <ion-label color="danger" *ngIf="form.get('password').touched && form.get('password').errors?.required ">Password is Mandatory</ion-label>
         </ion-card-header>
-        <ion-button size="full" shape="round" fill="outline" [disabled]="form.valid" (click)="login()" >Login</ion-button>
+        <ion-button size="full" shape="round" fill="outline"  (click)="login()" >Login</ion-button>
       </ion-card>
       <br>
       <br>

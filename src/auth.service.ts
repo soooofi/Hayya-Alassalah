@@ -7,6 +7,7 @@ import { User } from "@firebase/auth";
 /*------------for monthly------------------------- */
 import { Firestore, collectionData} from '@angular/fire/firestore';
 import { collection } from '@firebase/firestore'
+import { LoginPageRoutingModule } from "./app/login/login-routing.module";
 
 /*------------for monthly------------------------- */
 interface user 

@@ -16,7 +16,7 @@ describe('LoginPageForm', () =>{
     it('should crate login form empty',() =>{
 
         const loginPageForm = new LoginPageForm(new FormBuilder());
-        const form = loginPageForm.crateForm();
+        const form = loginPageForm.createForm();
 
         expect(form).not.toBeNull();
         expect(form.get('email')).not.toBeNull();
@@ -47,4 +47,6 @@ it('should have a valid form', () => {
 
     expect(form.valid).toBeTruthy();
 })
+
+
 })
